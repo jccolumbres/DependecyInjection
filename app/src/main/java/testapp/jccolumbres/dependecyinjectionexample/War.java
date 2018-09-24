@@ -6,14 +6,19 @@ public class War {
     private Boltons boltons;
 
 
-    public War(){
-        starks = new Starks();
-        boltons = new Boltons();
+    //DI - getting dependencies from else where via constructor
+    public War( Starks starks, Boltons boltons) {
+        this.starks = starks;
+        this.boltons = boltons;
+    }
 
+    public void prepare(){
         starks.prepareForWar();
-        starks.reportForWar();
-
         boltons.prepareForWar();
+    }
+    public void report(){
+        starks.reportForWar();
         boltons.reportForWar();
     }
+
 }
