@@ -1,5 +1,7 @@
 package testapp.jccolumbres.dependecyinjectionexample;
 
+import javax.inject.Inject;
+
 public class War {
 
     private Starks starks;
@@ -7,7 +9,9 @@ public class War {
 
 
     //DI - getting dependencies from else where via constructor
-    public War( Starks starks, Boltons boltons) {
+
+    @Inject
+    public War(Starks starks, Boltons boltons) {
         this.starks = starks;
         this.boltons = boltons;
     }
