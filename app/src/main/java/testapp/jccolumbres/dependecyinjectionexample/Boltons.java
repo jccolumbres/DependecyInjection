@@ -11,11 +11,11 @@ public class Boltons implements House {
     }
     @Override
     public void prepareForWar() {
-        Log.d("Message" , this.getClass().getSimpleName() + "preparedForWar");
+        Log.d("Battle" , this.getClass().getSimpleName() + " prepared For War");
     }
 
     @Override
     public void reportForWar() {
-        Log.d("Message" , this.getClass().getSimpleName()+ " reporting");
+        Log.d("Battle" , this.getClass().getSimpleName()+ " reporting");
     }
 }
