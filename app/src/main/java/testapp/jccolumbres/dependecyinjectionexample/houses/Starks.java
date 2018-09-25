@@ -1,18 +1,19 @@
-package testapp.jccolumbres.dependecyinjectionexample;
+package testapp.jccolumbres.dependecyinjectionexample.houses;
 
 import android.util.Log;
 
 import javax.inject.Inject;
 
-public class Arryn implements House {
+import testapp.jccolumbres.dependecyinjectionexample.House;
+
+public class Starks implements House {
     @Inject
-    public Arryn(){
+    public Starks(){
 
     }
     @Override
     public void prepareForWar() {
         Log.d("Battle" , this.getClass().getSimpleName() + " prepared For War");
-
     }
 
     @Override

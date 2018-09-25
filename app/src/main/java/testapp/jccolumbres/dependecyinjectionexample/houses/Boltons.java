@@ -1,8 +1,10 @@
-package testapp.jccolumbres.dependecyinjectionexample;
+package testapp.jccolumbres.dependecyinjectionexample.houses;
 
 import android.util.Log;
 
 import javax.inject.Inject;
+
+import testapp.jccolumbres.dependecyinjectionexample.House;
 
 public class Boltons implements House {
     @Inject
