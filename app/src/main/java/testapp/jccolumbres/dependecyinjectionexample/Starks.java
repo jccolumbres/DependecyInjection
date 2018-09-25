@@ -1,4 +1,4 @@
-package testapp.jccolumbres.dependecyinjectionexample.houses;
+package testapp.jccolumbres.dependecyinjectionexample;
 
 import android.util.Log;
 
@@ -6,9 +6,9 @@ import javax.inject.Inject;
 
 import testapp.jccolumbres.dependecyinjectionexample.House;
 
-public class Lannisters implements House {
+public class Starks implements House {
     @Inject
-    public Lannisters(){
+    public Starks(){
 
     }
     @Override

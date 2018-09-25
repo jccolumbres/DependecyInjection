@@ -1,7 +1,29 @@
 package testapp.jccolumbres.dependecyinjectionexample;
 
-public interface War {
+import javax.inject.Inject;
 
-    void report();
-    void prepare();
+
+public class War{
+
+    private Starks starks;
+    private Boltons boltons;
+
+    //DI - getting dependencies from else where via constructor
+
+    @Inject
+    public War(Starks starks, Boltons boltons) {
+        this.starks = starks;
+        this.boltons = boltons;
+    }
+
+
+    public void report() {
+        starks.reportForWar();
+        boltons.reportForWar();
+    }
+
+    public void prepare() {
+        starks.prepareForWar();
+        boltons.prepareForWar();
+    }
 }
